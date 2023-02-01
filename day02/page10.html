@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #top1 {width: 800px; height: 100px; background: green;}
+        #top2 {color: white; width: 300px; height: 100px; float: right; 
+            background: black; position: fixed; top: 5px;
+             right: 5px; border-radius: 100px 10px 100px 10px; border: 20px inset blue;}
+        li {
+            list-style: none; 
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+            text-align: center;
+    
+        }
+
+            li:nth-child(2n) {background: orange;}
+            li:nth-child(2n+1) {background: yellow;}
+
+    a {text-decoration: none; color: red; font-weight: bold;}
+
+    body {
+    background: red;
+    color: fuchsia;
+    background-image: url(flower.jpg);
+}
+        #center {display: flex; align-items: center; justify-content: center;}
+
+       
+
+        .color {background: pink;}
+        .color2 {background: white;}
+
+            table {margin-top: 10px;}
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="total">
+            <div id="top1">
+
+                <li>
+
+                    <a href="page20.html">회원가입</a> 
+         
+                 </li>
+         
+                 <li>
+         
+                     <a href="page10.html">제품정보</a> 
+          
+                  </li>
+         
+         
+                  <li>
+         
+                     <a href="page30.html">게시판</a> 
+          
+                  </li>
+         
+         
+                  <li>
+         
+                     <a href="page40.html">장바구니</a> 
+          
+                  </li>
+         
+             </ul>
+
+
+
+
+            </div>
+            <div id="top2">
+
+                <p>고정된 화면이 보이는 부분.</p>
+
+
+
+
+            </div>
+            <div id="center">
+                 
+        <table>
+
+            <tr>
+
+                <td class="color">제품번호</td>
+                <td class="color2">100</td>
+            
+            </tr>
+
+            <tr>
+
+                <td class="color">제품이름</td>
+                <td class="color2">chicken1</td>
+                
+            </tr>
+
+            <tr>
+
+                <td class="color">제품설명</td>
+                <td class="color2">delicous chicken1</td>
+            
+            </tr>
+
+            <tr>
+
+                <td class="color">제품가격</td>
+                <td class="color2">20,000</td>
+            
+            </tr>
+
+            <tr>
+
+                <td class="color">제품회사</td>
+                <td class="color2">shinchon</td>
+            
+            </tr>
+            <tr>
+
+                <td class="color">제품이미지</td>
+                <td class="color2"><img src="윙 사진.jpg" alt="치킨사진"></td>
+        
+            </tr>     
+
+            <tr>
+
+                <td colspan="2"><button><img src="장바구니002.png" alt="장바구니"></button></td>
+        
+            </tr>  
+
+        </table> 
+
+
+
+            </div>
+    </div>
+
+</body>
+</html>

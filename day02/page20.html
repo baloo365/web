@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #top1 {width: 800px; height: 100px; background: green;}
+        #top2 {color: white; width: 300px; height: 100px; float: right; 
+            background: black; position: fixed; top: 5px;
+             right: 5px; border-radius: 100px 10px 100px 10px; border: 20px inset blue;}
+        li {
+            list-style: none; 
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+            text-align: center;
+    
+        }
+
+            li:nth-child(2n) {background: orange;}
+            li:nth-child(2n+1) {background: yellow;}
+
+    a {text-decoration: none; color: red; font-weight: bold;}
+
+        body {background: deepskyblue;}
+        #center {background: yellow; padding-top: 50px; padding-left: 50px;}
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="total">
+            <div id="top1">
+
+                <li>
+
+                    <a href="page20.html">회원가입</a> 
+         
+                 </li>
+         
+                 <li>
+         
+                     <a href="page10.html">제품정보</a> 
+          
+                  </li>
+         
+         
+                  <li>
+         
+                     <a href="page30.html">게시판</a> 
+          
+                  </li>
+         
+         
+                  <li>
+         
+                     <a href="page40.html">장바구니</a> 
+          
+                  </li>
+         
+             </ul>
+
+
+
+
+            </div>
+            <div id="top2">
+
+                <p>고정된 화면이 보이는 부분.</p>
+
+
+
+
+            </div>
+            <div id="center">
+                <h3>검색할 단어를 입력하세요.</h3>
+
+                <hr color="blue">
+                <!-- <input type="submit">  -->
+                <form action="보내는서버주소">
+                검색할 단어 <input type="text">
+                    <button>검색어 전송</button>
+                </form>
+                
+                <hr color="red">
+                <form action="보내는서버주소">
+
+                    <table>
+                    <tr> 
+                        <td>아이디</td>
+                        <td><input type="text"></td>
+                         
+                    </tr>
+                    <tr>
+                        <td>패스워드</td> 
+                        <td><input type="password"></td> 
+                       
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center"><button>로그인 처리 요청</button></td> 
+                        
+                       
+                    </tr>
+
+                    </table>
+                </form>
+
+                <hr color="red">
+                <h3>회원가입 화면</h3>
+                <form action="보내는서버주소">
+
+                    <table>
+                    <tr> 
+                        <td>가입할 아이디</td>
+                        <td><input type="text"></td>
+                         
+                    </tr>
+                    <tr>
+                        <td>가입할 패스워드</td> 
+                        <td><input type="password"></td> 
+                       
+                    </tr>
+
+                    <tr>
+                        <td>가입할 이름</td> 
+                        <td><input type="text" placeholder="성과 이름을 붙여 쓰세요."></td> 
+                       
+                    </tr>
+
+                    <tr>
+                        <td>성별</td> 
+                        <td>남자<input type="radio" name="gender"> 여자<input type="radio" name="gender"></td> 
+                       <!-- radio는 하나만 선택하는 경우 사용 name이 같을 경우 하나만 선택 가능 -->
+                    </tr>
+
+                    <tr>
+                        <td>취미</td> 
+                        <td><input type="checkbox">영화감상 <input type="checkbox">수영 <input type="checkbox">등산 <input type="checkbox">독서</td> 
+                       <!-- checkbox는 선택을 안하거나 여러개 선택 가능 -->
+                    </tr>
+
+                    <tr>
+                        <td>전화번호 통신사</td> 
+                        <td><select>
+                                    <option>SKT</option>
+                                    <option>LG</option>
+                                    <option>KT</option>
+                                    <option>알뜰폰</option>
+                            
+
+                        </select>
+                        <input type="number" placeholder="-없이 숫자로 이어쓰세요.">
+                    
+                    </td> 
+                    
+                    </tr>
+
+                    <tr>
+                        <td>생년월일</td> 
+                        <td><input type="date" name="" id=""></td> 
+                
+                    </tr>
+
+                    <tr>
+                        <td>가입한 날짜</td> 
+                        <td><input type="datetime-local"> </td> 
+                
+                    </tr>
+
+
+                    <tr>
+                        <td>가입한 주</td> 
+                        <td> <input type="week" name="" id=""> </td> 
+                       
+                    </tr>
+                   
+                    <tr> 
+                        
+                        <td>하고 싶은 말</td> 
+                        <td><textarea cols="30" rows="10" placeholder="100글자 이내로 써주세요."></textarea></td> 
+                    </tr>
+
+                    <tr>
+                        
+                        <td colspan="2" align="center"><button>회원 가입 처리 요청</button></td> 
+                        
+                       
+                    </tr>
+
+
+                    </table>
+                </form>
+
+
+            </div>
+    </div>
+
+</body>
+</html>
