@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function check_id () {
+            id2 = document.getElementById("id2").value
+            size = id2.length
+            if (size < 5) {
+                div_tag = document.getElementById("result")
+                div_tag.innerHTML = "<font color =red>5글자 미만이므로 가입불가</font>"
+            } 
+            else {
+                div_tag.innerHTML = "<font color =red>5글자 이상이므로 가입가능</font>"
+            } 
+        }
+
+        function check_pw() {
+            pw1 = document.getElementById("pw1").value
+            pw2 = document.getElementById("pw2").value
+
+            if (pw1==pw2) {
+                div_tag = document.getElementById("result")
+                div_tag.innerHTML = "<font color =red>패스워드 동일 확인</font> <img src='ok.jpg' width=100 height=100>"
+            } 
+            else {
+                div_tag.innerHTML = "<font color =red>패스워드 불일치 확인 필요</font> <img src='fail.jpg' width=100 height=100>"
+            } 
+            }
+
+        
+    </script>
+</head>
+<body>
+    아이디: <input type="text" id="id2" value="test">
+    <button onclick="check_id()">글자수체크</button> <br>
+    패스워드: <input type="text" id="pw1" value="test"> <br>
+    패스워드: <input type="text" id="pw2" value="test">
+    <button onclick="check_pw()">패스워드 동일</button> <br>
+
+        <hr>
+        <div id="result">
+            결과 나오는 곳
+
+        </div>
+</body>
+</html>

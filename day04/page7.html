@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 3.  -->  <script src="out2.js"></script>
+    <script>
+
+    // 1.    
+        for (let index = 0; index < 3; index++) {
+            document.write("@@@ <br>")
+            }
+
+    // 2.
+            usual_site = prompt("당신이 주로 가는 포털 사이트")
+        if(usual_site=="네이버") {
+            location.href="http://www.naver.com"}
+        else if (usual_site=="다음") {
+            location.href="http://www.daum.net"}
+        else {
+            location.href="http://www.google.com"}
+
+     // 3.            
+            여행하다()
+            쉬다()
+
+    // 4. 
+            answer = confirm("당신은 자바 프로그래머인가요?")
+            if (answer==true) {alert("훌륭한 웹프로그러시군요")
+        }   
+            else {alert("다른 언어를 사용하시군요")
+        }
+
+    // 5. 
+            coffee_price = prompt("커피값을 입력하세요.")
+            coffee_count =  prompt("커피구매 개수를 입력하세요.")
+            result = coffee_price*coffee_count
+
+            if (parseInt(result) >= 15000) {
+                alert("할인해드릴게요.")
+            }
+            else {alert("정가를 내셔야합니다.")
+            }
+
+    // 6. 
+            food = prompt("먹고 싶은 음식을 입력하세요.")
+            food_price =  prompt("음식 가격을 입력하세요.")
+
+            if (food = "커피" && parseInt(food_price) < 5000) {
+                alert("내가 살게요.")
+            }
+            else {alert("네가 사세요.")
+            }
+
+     // 7. 
+            now_time = prompt("지금은 오전인가요? 오후인가요?")
+            
+            if (now_time == "오전") {
+                for (let index = 0; index < 3; index++) {
+                document.write("굿모닝! <br>")
+            }
+            }
+            else if (now_time == "오후") {
+                for (let index = 0; index < 5; index++) {
+                document.write("굿애프터눈! <br>")
+            }
+            } 
+            else {
+                for (let index = 0; index < 10; index++) {
+                document.write("굿나잇! <br>")
+            }
+            } 
+    </script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
