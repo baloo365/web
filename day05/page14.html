@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery UI Accordion - Default functionality</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(function () {
+        $("#b1").click(function() {
+            // alert("b1 클릭함")
+            $.ajax({
+                url: "ok.html",
+                success : function(x) {
+                    $("#d3").html(x)
+
+                }
+            })
+        })
+      });
+
+      $(function () {
+        $("#b2").click(function() {
+            // alert("b2 클릭함")
+            $.ajax({
+                url: "weather.html",
+                success : function(x) {
+                    $("#d1").html(x)
+
+                }
+            })
+        })
+      });
+
+      $(function () {
+        $("#b3").click(function() {
+            // alert("b3 클릭함")
+            $.ajax({
+                url: "tour.html",
+                success : function(x) {
+                    $("#d2").html(x)
+
+                }
+            })
+        })
+      });
+      // 뜻 $표시는 document.getelementId("")와 동일함. 해석해보면 b3을 가져온다는 뜻이고
+      // 클릭할 경우 오른쪽 함수를 실행하는데 ajax 함수를 실행한다는 뜻
+      // ajax 함수는 화면이 넘어가지 않고 페이지가 보여지는(?) 함수임.
+      // sucess function(x)에서 x는 입력한 url을 의미하며
+      // $("#d2").html 은 #d2 html에 x가 나타나도록 한다는 것 같음.
+    </script>
+  </head>
+  <body>
+    <button id="b1">영화정보 받아오기</button>
+    <button id="b2">코로나정보 받아오기</button>
+    <button id="b3">교통정보 받아오기</button>
+    <hr>
+    <div id="d1" style="width: 200px; height: 100px; background: lime;"> </div>
+    <div id="d2" style="width: 200px; height: 100px; background: yellow;"> </div>
+    <div id="d3" style="width: 200px; height: 100px; background: pink;"> </div>
+  </body>
+</html>

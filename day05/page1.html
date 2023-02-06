@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pay() {
+            store_value = document.getElementById("store").value
+            price_value = document.getElementById("price").value
+            paytype_value = document.getElementById("pay_type").value
+            price2 = parseInt(price_value)
+            result = document.getElementById("result")
+            if (paytype_value == 1) {
+                price2 = price2
+            }
+            else if (paytype_value == 2) {
+                price2 = price2+1000
+            }
+            else {
+                price2 = price2+500
+            }
+            text = store_value + "에서 "  + price2 + "원을 결제수단 " + paytype_value + "번으로 결제했습니다."
+            result.innerHTML = text 
+        }
+
+    </script>
+
+</head>
+<body>  <hr color="red">
+        구매상점: <input type="text" id="store" value="더조은샵"> <br>
+        결제금액: <input type="text" id="price" value="10000"> <br>
+        입력수단 1)계좌이체 2) 신용카드 3)휴대폰 결제
+        <input type="text" id="pay_type" value="1"> <br>
+        <button onclick="pay()">결제버튼</button>
+        <hr color="blue">
+
+        <div id="result">
+            결과 나오는 곳
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+    <link rel="stylesheet" href="test.css">
+    <style>
+        li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            font-size: large;
+
+        }
+        a {text-decoration: none;}
+    
+    </style>
+    <script>
+        function find2() {
+            time1 = "오전"
+            play2 = "수영"
+            time = document.getElementById("time").value
+            play = document.getElementById("play").value
+            result = document.getElementById("result")
+
+            if (time == time1 && play == play2) {
+                
+                result.innerHTML = "<font color=red>수강 신청이 가능합니다.</font> <img src='ok.jpg' width=100 height=100>"
+            } 
+            else {
+                result.innerHTML = "<font color=red>수강 가능한 잔여 인원이 없습니다.</font> <img src='fail.jpg' width=100 height=100>"
+            } 
+        }
+
+    </script>
+
+    
+</head>
+<body align="center">
+
+
+    <div>
+    <div align="center" style="background:rgb(131, 213, 243)">
+
+
+            <ul>
+                <li>
+                    <a href="test2.html">스포츠센터 소개</a>
+                </li>
+                <li>
+                    <a href="test2.html">개설 강좌 안내</a>
+                </li>
+                <li>
+                    <a href="test2.html">신규 회원 수강 등록</a>
+                </li>
+                <li>
+                    <a href="test2.html">기존 회원 수강 등록</a>
+                </li>
+               
+            </ul>
+    </div>       
+      
+
+        <div><h1>스포츠 수강 신청</h1></div>
+    </div>
+   
+    <table align="center">
+        <tr>
+            <td>시간대</td>
+            <td><input type="text" id="time" value="오전"></td>
+            
+
+        </tr>
+
+        <tr>
+            <td>종목</td>
+            <td><input type="text" id="play" value="수영"></td>
+        
+        </tr>
+        <tr align="center">
+            <td id="find" colspan="2">
+                <button onclick="find2()">찾기</button></td>
+         
+        </tr>
+
+    </table>
+    <hr>
+    <div id="result">
+        신규 회원은 20일부터 신청이 가능합니다.
+    </div>
+
+</body>
+</html>
